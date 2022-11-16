@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/user_pref.css" />
+    <title>Tech Capsule | User Preferences</title>
+    <link rel="icon" type="image/x-icon" href="../static/image.png" />
+  </head>
+  <div class="content">
+    <div class = "center">
+      <div class="one_stop">
+        <img src="../static/image.png" />
+      </div>
+      <h1>Which of these areas are you interested in?</h1>
+    </div>
+    <div class="boxes">
+      <form method="POST" action="/{{ user_id }}/news-preferences">
+        <label class="container">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="topic"
+            value="cryptonews.com"
+            onclick="myFunction()"
+          />
+          Crypto
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="topic"
+            value="teslarati.com"
+            onclick="myFunction()"
+          />
+          Tesla
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="topic"
+            value="wired.com"
+            id="myCheck"
+            onclick="myFunction()"
+          />
+          Machine Learning & AI
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="topic"
+            value="siliconrepublic.com"
+            onclick="myFunction()"
+          />
+          FAANG & General Tech
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="topic"
+            value="tomshardware.com"
+            id="myCheck"
+            onclick="myFunction()"
+          />
+          Hardware
+          <span class="checkmark"></span>
+        </label>
+        <button id="button" type="submit" name="submit_button" value=">">
+          >
+        </button>
+      </form>
+    </div>
+  </div>
+  <!--    <div id="footer">-->
+  <!--        {% block footer %}-->
+  <!--        &copy; Copyright 2022 by <a href="http://domain.invalid/">Team 1</a>.-->
+  <!--        {% endblock %}-->
+  <!--    </div>-->
+  <script src="../static/buttonhidding.js"></script>
+</html>

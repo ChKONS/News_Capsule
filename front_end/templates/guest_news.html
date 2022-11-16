@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/static/news.css" />
+    <title>Tech Capsule | Latest News</title>
+    <link rel="icon" type="image/x-icon" href="../static/image.png" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <h1>Here are the latest news on your chosen topics</h1>
+        <section class="flex">
+          <img src="" />
+        </section>
+        <form action="/news-feed" method="POST">
+          {% for item in value %}
+          <ul>
+            <a href="{{item.article_url}}" target="_blank" />{{item.title}}
+          </ul>
+          {% endfor %}
+        </form>
+      </div>
+      <footer>
+        <ul>
+          <a class="topics" href="{{ '/' }}">Homepage</a>
+        </ul>
+        <ul>
+          <a class="topics" href="{{ '/news-preferences' }}">Change Topics</a>
+        </ul>
+        <ul>
+          <a class="topics" href="{{ '/sign-in' }}">Login as User</a>
+        </ul>
+      </footer>
+    </div>
+  </body>
+  <script src="../static/images.js"></script>
+</html>

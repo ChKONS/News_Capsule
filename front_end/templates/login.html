@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/static/login.css" />
+    <title>Tech Capsule | Login</title>
+    <link rel="icon" type="image/x-icon" href="../static/image.png" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="picture"></div>
+      <div class="center">
+        <div class="login-box">
+          <img src="../static/image.png" />
+          <h2>Welcome to Tech Capsule!</h2>
+          <div class="login">
+            <form action="" method="post">
+              <label></label>
+              <input
+                class="textfield"
+                name="username"
+                type="username"
+                placeholder="Write your username..."
+                required
+              /><br /><br />
+              <label></label>
+              <input
+                class="textfield"
+                name="password"
+                type="password"
+                placeholder="Write your password..."
+                required
+              /><br /><br />
+              <input class="button" type="submit" value="LOGIN" /><br />
+            </form>
+          </div>
+          <h3>-------- OR ---------</h3>
+          <div>
+            <form action="/register">
+              <!-- <label>Are you new here?</label><br /><br /> -->
+              <input class="button" value="REGISTER" type="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/static/profile.css" />
+    <title>Tech Capsule | User Profile</title>
+    <link rel="icon" type="image/x-icon" href="../static/image.png" />
+  </head>
+  <body>
+    <div class="content">
+      <h1>Hello, {{ username }}!</h1>
+      <form action="/{{user_id}}/news-preferences">
+        <button class="button" type="submit">
+          <a href="/{{user_id}}/news-preferences">Set/Update News Preferences</a>
+        </button>
+      </form>
+      <form action="/{{user_id}}/news-feed">
+        <button class="button" type="submit">
+          <a href="/{{user_id}}/news-feed">Take Me To The News</a>
+        </button>
+      </form>
+      <form action="/">
+        <button class="button" type="submit"><a href="/">Logout</a></button>
+      </form>
+    </div>
+  </body>
+</html>
