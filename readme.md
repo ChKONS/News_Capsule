@@ -1,3 +1,11 @@
+## Project: News Capsule
+
+Helping to reach the technology news fast and easy. Project made during CFGdegree.
+
+My contribution: front-end for the project (HTML, CSS and JS) + core code for login and register features, including hashing the passwords. 
+
+## How to run
+
 To run this application, please create a new virtual environment in PyCharm and install the packages in the requirements.txt file
 
 In your PyCharm configuration, please set the working directory to the "Project\News_Capsule" directory.
